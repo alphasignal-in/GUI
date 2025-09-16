@@ -1,3 +1,4 @@
 #!/bin/sh
-bash print.sh &
-node server.js
+
+node server.js &
+bash print.sh 
