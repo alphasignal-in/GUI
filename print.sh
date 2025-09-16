@@ -5,11 +5,6 @@
 while true; do
 
 ASSETS=("EURUSD" "GBPUSD" "AUDUSD" "USDJPY" "USDCHF" "XAUUSD" "BTCUSD" "ETHUSD" )
-say building assets
-
-
-say pushing assets image
-
 for ASSET in "${ASSETS[@]}"; do
 echo " "
 echo " "
@@ -21,10 +16,6 @@ echo "--------------------------------------------"
 echo " "
 echo " "
 done
-
-say finished pushing images
-
-
-
+# say finished pushing images
   sleep 1
 done | websocat -t  ws-l:0.0.0.0:8080 - --exit-on-eof
