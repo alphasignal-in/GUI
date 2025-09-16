@@ -22,7 +22,7 @@
       return;
     }
     updateStatus('Connecting...');
-    ws = new WebSocket('ws://localhost:8080');
+    ws = new WebSocket('ws://35.84.193.199:8080');
 
     ws.onopen = function () {
       enqueue('🔑 Sending password...');
