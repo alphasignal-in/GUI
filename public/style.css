@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #151515;
+  font-family: "Share Tech Mono", monospace, monospace;
+
+}
+h1 {
+margin: auto;
+}
+.topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 56px;
+  background: #0f0f0f;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  z-index: 10;
+}
+.topbar input {
+  background: #111;
+  color: #cde;
+  border: 1px solid #223;
+  padding: 8px;
+  font-family: monospace;
+}
+.topbar button {
+  background: #234;
+  color: #dff;
+  border: 1px solid #345;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: monospace;
+}
+.topbar .status {
+  margin-left: auto;
+  color: #7f7;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.hacking-animation {
+  padding-top: 56px; /* leave space for topbar */
+  height: calc(100% - 56px);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.hacking-animation__text {
+  bottom: 0;
+  color: #eee;
+  line-height: 1.5rem;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 18px;
+}
+.hacking-animation__character {
+  animation: type 1s linear;
+  color: #45aae7;
+}
+
+@keyframes type {
+
+  100% {
+    background: transparent;
+    color: #45aae7;
+  }
+}
+
+.status1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 24px;
+  color: #45aae7;
+  background: #151515;
+  padding: 10px 20px;
+  border: 1px solid #45aae7;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1000;  /* stays on top */
+}
