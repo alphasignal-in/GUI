@@ -3,7 +3,7 @@ const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
 
-const HTTP_PORT = process.env.HTTP_PORT || 3000;
+const HTTP_PORT = process.env.HTTP_PORT || 80;
 const WS_PORT = process.env.WS_PORT || 8081;
 const PASSWORD = process.env.TERMINAL_PASSWORD || 'secret123';
 const MAX_HISTORY = 500;
